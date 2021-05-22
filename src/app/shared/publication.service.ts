@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Publication } from './publication';
+import { Response } from './response';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,7 +12,7 @@ export class PublicationService {
 
   constructor(private http: HttpClient) { }
 
-  getAll(): Observable<Publication[]> {
-    return this.http.get<Publication[]>(`${this.api}/allchildren`);
+  getAll(): Observable<any> {
+    return this.http.get<Response>(`${this.api}/children/?format=json`);
   }
 }
