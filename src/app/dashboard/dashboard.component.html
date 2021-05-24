@@ -1,13 +1,8 @@
-<p>dashboard works!</p>
-<p>{{ response.nodelist_count }} results</p>
-
-  <table class='table'>
-    <tbody>
-        <tr *ngFor="let node of publications;">
-        <td>{{node.attributes.inventor}}</td>
-        <td>{{node.attributes.title}}</td>
-        <td>{{node.attributes.publication_date}}</td>
-    </tr>
-</tbody>
-  </table>
+<div>
+  <p>{{ response.nodelist_count }} Suchergebnisse</p>
+  <br>
+  <ul *ngFor="let n of publications">
+    <app-publication [node]="n"></app-publication>
+  </ul>
+</div>
   
