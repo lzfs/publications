@@ -1,16 +1,20 @@
 <div>
-<mat-card>
-<div class="info">
-<h2>{{ title }}</h2>
-<h3 *ngIf="authors != '' && authors != ' '"><b>Autor(en): </b> {{ authors }}</h3>
-<p *ngIf="publication_date != '' && publication_date != ' '"><b>Veröffentlichung: </b> {{ publication_date }}</p>
-<p *ngIf="pages != '' && pages != ' '"><b>Seitenzahl: </b> {{ pages }}</p>
-<p *ngIf="type != '' && type != ' '"><b>Typ: </b> {{ type }}</p>
-<p *ngIf="language != '' && language != ' '"><b>Sprache: </b> {{ language }}</p>
-<p *ngIf="journal != '' && journal != ' '"><b>Magazin: </b> {{ journal }}</p>
-<p *ngIf="issue != '' && issue != ' '"><b>Ausgabe: </b> {{ issue }}</p>
-<p *ngIf="url_full != '' && url_full != ' '"><b>URL: </b> {{ url_full }}</p>
-</div>
-<button mat-button color="accent">zur Veröffentlichung</button>
-</mat-card>
+    <mat-card>
+        <div class="info">
+            <h1>{{ title }}</h1>
+            <h3 *ngIf="authors != '' && authors != ' '"><b>Autor(en): </b> {{ authors }}</h3>
+            <p *ngIf="publication_date != '' && publication_date != ' '"><b>Veröffentlichung: </b> {{ publication_date }}</p>
+            <p *ngIf="pages != '' && pages != ' '"><b>Seitenzahl: </b> {{ pages }}</p>
+            <p *ngIf="type != '' && type != ' '"><b>Typ: </b> {{ type }}</p>
+            <p *ngIf="language != '' && language != ' '"><b>Sprache: </b> {{ language }}</p>
+            <p *ngIf="journal != '' && journal != ' '"><b>Magazin: </b> {{ journal }}</p>
+            <p *ngIf="issue != '' && issue != ' '"><b>Ausgabe: </b> {{ issue }}</p>
+            <p *ngIf="url_full != '' && url_full != ' '"><b>URL: </b> {{ url_full }}</p>
+        </div>
+        <div class="center">
+            <a>
+                <button mat-stroked-button color="success">zur Veröffentlichung</button>
+            </a>
+        </div>
+    </mat-card>
 </div>

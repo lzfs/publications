@@ -1,6 +1,6 @@
 div {
-    margin: 0.5em;
     padding: 0.5em;
+    text-align: center;
 }
 
 button {
@@ -8,5 +8,17 @@ button {
 }
 
 mat-form-field {
-    width: 35%;
-  }
+    width: 50%;
+}
+
+.mat-stroked-button {
+    background-color: #ee7202;
+    color: #fff;
+    align-content: center;
+}
+
+mat-label {
+    font-size: 12pt;
+    color: gray;
+    text-align: center;
+}
