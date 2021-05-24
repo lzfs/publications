@@ -15,4 +15,8 @@ export class PublicationService {
   getAll(): Observable<any> {
     return this.http.get<Response>(`${this.api}/children/?format=json`);
   }
+
+  getCount(count: number): Observable<any> {
+    return this.http.get<Response>(`${this.api}/children/?format=json&limit=${count}`);
+  }
 }

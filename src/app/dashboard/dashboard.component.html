@@ -1,8 +1,9 @@
 <div>
-  <p>{{ response.nodelist_count }} Suchergebnisse</p>
+  <p>{{ maxCount }} Suchergebnisse</p>
   <br>
-  <ul *ngFor="let n of publications">
+  <ul *ngFor="let n of getResults()">
     <app-publication [node]="n"></app-publication>
   </ul>
 </div>
-  
+<p>{{ counter }}/{{ maxCount }} Ergebnisse</p>
+<button (click)="moreResults()">mehr laden</button>
