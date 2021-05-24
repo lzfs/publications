@@ -19,4 +19,10 @@ export class PublicationService {
   getCount(count: number): Observable<any> {
     return this.http.get<Response>(`${this.api}/children/?format=json&limit=${count}`);
   }
+
+  getX(param: string): Observable<any> {
+    param = param.replace(' ', '%20')
+    console.log(param);
+    return this.http.get<Response>(`${this.api}/children/?format=json&q=${param}`);
+  }
 }

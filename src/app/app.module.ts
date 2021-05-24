@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { SearchComponent } from './search/search.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PublicationComponent } from './publication/publication.component';
 
@@ -19,7 +18,6 @@ import { PublicationComponent } from './publication/publication.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchComponent,
     DashboardComponent,
     PublicationComponent
   ],

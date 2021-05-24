@@ -16,6 +16,7 @@ export class DashboardComponent implements OnInit {
   allNodes: Response = new Response();
   counter = 10;
   maxCount = 0;
+  value = '';
 
   constructor(private ps: PublicationService) { }
 
@@ -41,14 +42,21 @@ export class DashboardComponent implements OnInit {
   }
 
   moreResults(): void {
-    console.log(parseInt(this.response.nodelist_count));
     if (this.counter + 10 >= this.maxCount) {
       this.counter = parseInt(this.response.nodelist_count);
     } else {
       this.counter += 10;
     }
     this.getPublications();
-    console.log(this.counter);
+  }
+
+  search() {
+    this.ps.getX(this.value).subscribe(searchResponse => {
+      this.response = searchResponse;
+      this.response.nodelist = flatten(this.response.nodelist);
+      this.publications = this.response.nodelist;
+      this.maxCount = parseInt(this.response.nodelist_count);
+    });
   }
   
 }
