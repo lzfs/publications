@@ -1,13 +1,26 @@
 export interface Attributes {
     title: string;
-    paralleltitle: string;
-    assignee: string;
-    patent_number: string;
-    publication_date: string;
-    typ: string;
+
+    // authors
     inventor: string;
-    publisher: string;
-    issue: string;
+    fullname_comma: string;
+    authors: string;
+
+    // date of publication
+    publication_date: string;
+    year: string;
+
+    // type
+    typ: string;
+    type: string;
+
+    pages: string;
+
+    language: string;
+
     journal: string;
+    issue: string;
+
+    url_full: string;
     
 }
