@@ -34,6 +34,7 @@ export class DashboardComponent implements OnInit {
       this.allNodes = fullList;
       this.allNodes.nodelist = flatten(this.allNodes.nodelist);
       this.maxCount = parseInt(this.allNodes.nodelist_count);
+      this.counter = Math.min(10, this.maxCount);
     });
   }
 

@@ -22,7 +22,6 @@ export class PublicationService {
 
   getX(param: string): Observable<any> {
     param = param.replace(' ', '%20')
-    console.log(param);
     return this.http.get<Response>(`${this.api}/children/?format=json&q=${param}`);
   }
 }
