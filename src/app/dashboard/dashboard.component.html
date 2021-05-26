@@ -1,12 +1,12 @@
 <hr>
 <div class="search">
-<mat-form-field>
-  <mat-label>Suchen</mat-label>
-  <input matInput type="text" [(ngModel)]="value" (keyup.enter)="search()" (keyup.backspace)="search()">
-  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''; search()">
-    <mat-icon>close</mat-icon>
-  </button>
-</mat-form-field>
+  <mat-form-field>
+    <mat-label>Suchen</mat-label>
+      <input matInput type="text" [(ngModel)]="value" (keyup.enter)="search()" (keyup.backspace)="search()">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''; search()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
 </div>
 <div>
   <p>{{ maxCount }} Suchergebnisse</p>
@@ -15,5 +15,5 @@
   </ul>
 </div>
 <a>
-<button mat-stroked-button color="success" class="more-button" *ngIf="maxCount> 0" (click)="moreResults()">mehr laden</button>
+  <button mat-stroked-button color="success" class="more-button" *ngIf="maxCount> 0" (click)="moreResults()">mehr laden</button>
 </a>

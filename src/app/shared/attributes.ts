@@ -22,5 +22,5 @@ export interface Attributes {
     issue: string;
 
     url_full: string;
-    
+
 }

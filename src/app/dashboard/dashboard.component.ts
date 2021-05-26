@@ -59,5 +59,4 @@ export class DashboardComponent implements OnInit {
       this.maxCount = parseInt(this.response.nodelist_count);
     });
   }
-  
 }
