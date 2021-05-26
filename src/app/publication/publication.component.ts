@@ -34,7 +34,7 @@ export class PublicationComponent implements OnInit {
       this.authors = this.node.attributes.fullname_comma;
     }
     if(this.node.attributes.authors != null) {
-      this.authors = this.node.attributes.authors;
+      this.authors = this.node.attributes.authors.replace(";", "; ");
     }
 
     if(this.node.attributes.pages != null) {
