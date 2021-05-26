@@ -19,6 +19,7 @@ export class PublicationComponent implements OnInit {
   journal: string = "";
   issue: string = "";
   url_full: string = "";
+  id: string = "";
 
   constructor() { }
 
@@ -68,8 +69,14 @@ export class PublicationComponent implements OnInit {
     if(this.node.attributes.url_full != null) {
       this.url_full = this.node.attributes.url_full;
     }
-
+    if(this.node.id != null) {
+      this.id = this.node.id;
     }
+    }
+  }
+
+  goToPublication() {
+    window.open(`https://athene-forschung.unibw.de/${this.id}`, "_blank");
   }
 
 }
