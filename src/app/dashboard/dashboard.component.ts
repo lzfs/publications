@@ -52,7 +52,6 @@ export class DashboardComponent implements OnInit {
   }
 
   search() {
-    console.log(this.value);
     this.ps.getX(this.value).subscribe(searchResponse => {
       this.response = searchResponse;
       this.response.nodelist = flatten(this.response.nodelist);

@@ -1,14 +1,14 @@
 mat-card {
-    max-width: 60%;
+    max-width: 55%;
     margin: auto;
     border: 0.1px solid lightgray;
 }
 
 .info {
   text-align: left;
-  margin-top: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .mat-stroked-button {

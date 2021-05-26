@@ -1,4 +1,5 @@
-<div>
+<hr>
+<div class="search">
 <mat-form-field>
   <mat-label>Suchen</mat-label>
   <input matInput type="text" [(ngModel)]="value" (keyup.enter)="search()" (keyup.backspace)="search()">
@@ -7,7 +8,6 @@
   </button>
 </mat-form-field>
 </div>
-<br>
 <div>
   <p>{{ maxCount }} Suchergebnisse</p>
   <ul *ngFor="let n of getResults()">

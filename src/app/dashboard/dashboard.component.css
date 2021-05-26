@@ -3,12 +3,17 @@ div {
     text-align: center;
 }
 
+.search {
+    text-align: right;
+    padding-right: 3em;
+}
+
 .more-button {
     margin-bottom: 3em;
 }
 
 mat-form-field {
-    width: 50%;
+    width: 30%;
 }
 
 .mat-stroked-button {
@@ -19,10 +24,13 @@ mat-form-field {
 
 mat-label {
     font-size: 12pt;
-    color: gray;
     text-align: center;
 }
 
-mat-form-field-underline-focused {
-    background-color: #ee7202;
+hr {
+    height: 1px;
+    background-color: lightgray;
+    border: 0 none;
 }
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick { color: white; }
