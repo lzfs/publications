@@ -3,7 +3,7 @@ div {
     text-align: center;
 }
 
-button {
+.more-button {
     margin-bottom: 3em;
 }
 
@@ -21,4 +21,8 @@ mat-label {
     font-size: 12pt;
     color: gray;
     text-align: center;
+}
+
+mat-form-field-underline-focused {
+    background-color: #ee7202;
 }
